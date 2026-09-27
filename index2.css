@@ -59,6 +59,11 @@ background-color: rgb(30, 29, 41);
     width: 100%;
 }
 
+.igual:active {
+background-color: rgb(245, 207, 136);
+font-weight: bold;
+}
+
 @media (max-width: 500px) {
 .calculadora {
 grid-template-columns: repeat(6, 1fr);
