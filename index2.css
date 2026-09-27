@@ -1,0 +1,74 @@
+input {
+font-size: 28px;
+width: 70px;
+height: 70px;
+border-radius: 5px;
+}
+
+.tecla {
+background-color: rgba(0, 0, 0, 0.486);
+color: white;
+}
+
+.tecla:active {
+color: black;
+background-color: rgb(241, 240, 240);
+}
+
+.operador {
+color: white;
+background-color: orange;
+font-weight: bold;
+}
+
+.operador:active {
+background-color: rgb(245, 207, 136);
+font-weight: bold;
+}
+
+body {
+background-color: rgb(30, 29, 41);
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(6, 70px);
+    gap: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.pantalla {
+    grid-column: span 6;
+    height: 70px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 28px;
+    text-align: right;
+}
+
+.igual {
+    grid-column: span 2;
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+.calculadora {
+grid-template-columns: repeat(6, 1fr);
+width: 90vw;
+gap: 6px;
+}
+
+input {
+width: 100%;
+height: 50px;
+font-size: 18px;
+}
+}
